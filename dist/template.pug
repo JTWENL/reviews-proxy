@@ -1,0 +1,16 @@
+//- - var sim = script(crossorigin src=`${similar}`)
+//- - var rev = script(crossorigin src=`${reviews}`)
+
+html
+    head
+        link(rel='stylesheet' href=`${mainCSS}`)
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    body
+        div(itemid='no id' id='main')
+        script(src=`${main}`)
+        div(id='reviews')
+        //- script(src="http://localhost:8081/bundle.js.br")
+        div(id='app')
+        script(src=`${reviews}`)
+        script(src=`${similar}`)
